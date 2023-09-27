@@ -22,7 +22,7 @@
 
     <!-- Custom CSS -->
     <style>
-        /* Custom table styles */
+        /* Custom table styles (previous styles) */
         .table-custom {
             border-collapse: separate;
             border-spacing: 0;
@@ -30,19 +30,22 @@
         }
 
         .table-custom th,
-        .table-custom td,
-        .table-custom tr {
-            border: 1px solid #1f2453;
-            padding: 8px red;
+        .table-custom td {
+            border: 1px solid #dddddd;
+            padding: 8px;
             text-align: left;
         }
 
         .table-custom tbody tr:nth-child(even) {
-            background-color: #e71717;
+            background-color: #f2f2f2;
+        }
+
+        .table-custom tbody tr:nth-child(odd) {
+            background-color: #d4edda;
         }
 
         .table-custom tbody tr:hover {
-            background-color: #0ce43e;
+            background-color: #c3e6cb;
         }
     </style>
 </head>
@@ -99,32 +102,32 @@
         neatly and will break into multiple lines. In another case, the letters are assigned the "col-sm-2" class
         intended for smaller screens, ensuring they remain well-arranged.
     </p>
+
+    <!-- Buttons and Button Groups -->
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img1.jpg" alt="City 1" class="img-thumbnail img-responsive">
+        <!-- Button Groups -->
+        <div class="btn-toolbar" role="toolbar" aria-label="Button Groups">
+            <!-- First Button Group (Success) -->
+            <div class="btn-group me-2" role="group" aria-label="City Buttons">
+                <button type="button" class="btn btn-success">S</button>
+                <button type="button" class="btn btn-success">P</button>
+                <button type="button" class="btn btn-success">E</button>
             </div>
-            <div class="col-md-4">
-                <img src="img2.jpg" alt="City 2" class="img-thumbnail img-responsive">
+
+            <!-- Second Button Group (Alert) -->
+            <div class="btn-group me-2" role="group" aria-label="Alert Buttons">
+                <button type="button" class="btn btn-warning">A</button>
+                <button type="button" class="btn btn-warning">A</button>
             </div>
-            <div class="col-md-4">
-                <img src="img3.jpg" alt="City 3" class="img-thumbnail img-responsive">
+
+            <!-- Third Button Group (Danger) -->
+            <div class="btn-group" role="group" aria-label="Danger Buttons">
+                <button type="button" class="btn btn-danger">K</button>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img1.jpg" alt="City 1" class="img-thumbnail img-responsive">
-            </div>
-            <div class="col-md-4">
-                <img src="img2.jpg" alt="City 2" class="img-thumbnail img-responsive">
-            </div>
-            <div class="col-md-4">
-                <img src="img3.jpg" alt="City 3" class="img-thumbnail img-responsive">
-            </div>
-        </div>
-    </div>
+
+    <!-- Table -->
     <div class="container">
         <table class="table table-custom">
             <caption>Table of Letters, Cities, Rivers, and Trees</caption>
