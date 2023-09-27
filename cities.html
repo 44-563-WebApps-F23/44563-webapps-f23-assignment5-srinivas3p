@@ -18,7 +18,29 @@
         crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Table Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      /* Custom styles */
+      th {
+        background-color: #f2f2f2; /* Gray background for header */
+      }
+  
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #f7f7f7; /* Striped rows */
+      }
+  
+      .table-hover tbody tr:hover {
+        background-color: #e5e5e5; /* Hover effect */
+      }
+  
+      .table-sm td, .table-sm th {
+        padding: 0.5rem; /* Compact table cells */
+      }
+  
+      .table-primary td {
+        background-color: #ccebff; /* Context color for rows with a "primary" class */
+      }
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
